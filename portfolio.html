@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمالي - HUNTER Portfolio</title>
+    <meta name="description" content="استكشف أعمال HUNTER في التصميم والبرمجة والتسويق الرقمي">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme" data-lang="ar">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">HUNTER</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link" data-translate="nav_home">الرئيسية</a>
+                <a href="about.html" class="nav-link" data-translate="nav_about">من أنا</a>
+                <a href="services.html" class="nav-link" data-translate="nav_services">خدماتي</a>
+                <a href="portfolio.html" class="nav-link active" data-translate="nav_portfolio">أعمالي</a>
+                <a href="contact.html" class="nav-link" data-translate="nav_contact">تواصل معي</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <button class="lang-toggle" id="lang-toggle" data-translate="lang_toggle">EN</button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero -->
+    <section class="page-hero">
+        <div class="stars-container" id="stars"></div>
+        <div class="container">
+            <h1 class="page-title" data-translate="portfolio_page_title">معرض أعمالي</h1>
+            <p class="page-subtitle" data-translate="portfolio_page_subtitle">مشاريع نفخر بإنجازها وعملاء نعتز بثقتهم</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all" data-translate="filter_all">الكل</button>
+                <button class="filter-btn" data-filter="design" data-translate="filter_design">تصميم</button>
+                <button class="filter-btn" data-filter="web" data-translate="filter_web">مواقع ويب</button>
+                <button class="filter-btn" data-filter="social" data-translate="filter_social">وسائل تواصل</button>
+                <button class="filter-btn" data-filter="mobile" data-translate="filter_mobile">تطبيقات</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolio-grid">
+                <div class="portfolio-item" data-category="design" data-aos="zoom-in">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce Design">
+                        <div class="portfolio-overlay">
+                            <h3 data-translate="portfolio_item1_title">هوية بصرية لمتجر إلكتروني</h3>
+                            <p data-translate="portfolio_item1_desc">تصميم شعار وهوية بصرية كاملة</p>
+                            <div class="portfolio-tags">
+                                <span>تصميم</span>
+                                <span>هوية بصرية</span>
+                            </div>
+                            <button class="portfolio-btn" onclick="openPortfolioModal(1)">
+                                <span data-translate="view_details">عرض التفاصيل</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <h3 data-translate="portfolio_item2_title">موقع مطعم تفاعلي</h3>
+                            <p data-translate="portfolio_item2_desc">موقع ويب احترافي مع نظام حجز</p>
+                            <div class="portfolio-tags">
+                                <span>برمجة</span>
+                                <span>موقع ويب</span>
+                            </div>
+                            <button class="portfolio-btn" onclick="openPortfolioModal(2)">
+                                <span data-translate="view_details">عرض التفاصيل</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="social" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Social Media Campaign">
+                        <div class="portfolio-overlay">
+                            <h3 data-translate="portfolio_item3_title">حملة تسويق رقمي</h3>
+                            <p data-translate="portfolio_item3_desc">حملة شاملة لزيادة المبيعات</p>
+                            <div class="portfolio-tags">
+                                <span>تسويق</span>
+                                <span>وسائل تواصل</span>
+                            </div>
+                            <button class="portfolio-btn" onclick="openPortfolioModal(3)">
+                                <span data-translate="view_details">عرض التفاصيل</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="mobile" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mobile App">
+                        <div class="portfolio-overlay">
+                            <h3 data-translate="portfolio_item4_title">تطبيق إدارة المهام</h3>
+                            <p data-translate="portfolio_item4_desc">تطبيق جوال لتنظيم المهام اليومية</p>
+                            <div class="portfolio-tags">
+                                <span>تطبيق</span>
+                                <span>موبايل</span>
+                            </div>
+                            <button class="portfolio-btn" onclick="openPortfolioModal(4)">
+                                <span data-translate="view_details">عرض التفاصيل</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3182792/pexels-photo-3182792.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Brand Identity">
+                        <div class="portfolio-overlay">
+                            <h3 data-translate="portfolio_item5_title">هوية شركة تقنية</h3>
+                            <p data-translate="portfolio_item5_desc">تصميم هوية متكاملة لشركة ناشئة</p>
+                            <div class="portfolio-tags">
+                                <span>تصميم</span>
+                                <span>هوية</span>
+                            </div>
+                            <button class="portfolio-btn" onclick="openPortfolioModal(5)">
+                                <span data-translate="view_details">عرض التفاصيل</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <h3 data-translate="portfolio_item6_title">موقع شركة</h3>
+                            <p data-translate="portfolio_item6_desc">موقع شركة احترافي مع لوحة إدارة</p>
+                            <div class="portfolio-tags">
+                                <span>برمجة</span>
+                                <span>شركات</span>
+                            </div>
+                            <button class="portfolio-btn" onclick="openPortfolioModal(6)">
+                                <span data-translate="view_details">عرض التفاصيل</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modal -->
+    <div class="portfolio-modal" id="portfolioModal">
+        <div class="modal-overlay" onclick="closePortfolioModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closePortfolioModal()">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HUNTER</h3>
+                    <p data-translate="footer_description">حمدي محمد أبو كبير - مصمم ومطور ومسوق رقمي</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/19vfsxY9N6/" aria-label="Facebook">📘</a>
+                        <a href="https://www.instagram.com/hunter_abokabir?igsh=MW1qZHFhcWM5dHo4eA==" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer_links_title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-translate="nav_about">من أنا</a></li>
+                        <li><a href="services.html" data-translate="nav_services">خدماتي</a></li>
+                        <li><a href="portfolio.html" data-translate="nav_portfolio">أعمالي</a></li>
+                        <li><a href="contact.html" data-translate="nav_contact">تواصل معي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer_contact_title">معلومات التواصل</h4>
+                    <div class="contact-info">
+                        <p>📍 <span data-translate="footer_location">المنيا - ديرمواس - تل بني عمران</span></p>
+                        <p>📧 hunter@example.com</p>
+                        <p>📱 +201029448695</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HUNTER. <span data-translate="footer_rights">جميع الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

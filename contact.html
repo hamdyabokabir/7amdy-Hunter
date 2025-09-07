@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معي - HUNTER Portfolio</title>
+    <meta name="description" content="تواصل مع HUNTER لمناقشة مشروعك القادم. متوفر عبر الواتساب والبريد الإلكتروني">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme" data-lang="ar">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">HUNTER</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link" data-translate="nav_home">الرئيسية</a>
+                <a href="about.html" class="nav-link" data-translate="nav_about">من أنا</a>
+                <a href="services.html" class="nav-link" data-translate="nav_services">خدماتي</a>
+                <a href="portfolio.html" class="nav-link" data-translate="nav_portfolio">أعمالي</a>
+                <a href="contact.html" class="nav-link active" data-translate="nav_contact">تواصل معي</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <button class="lang-toggle" id="lang-toggle" data-translate="lang_toggle">EN</button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="stars-container" id="stars"></div>
+        <div class="container">
+            <h1 class="page-title" data-translate="contact_page_title">تواصل معي</h1>
+            <p class="page-subtitle" data-translate="contact_page_subtitle">لنناقش مشروعك القادم ونحوله إلى حقيقة</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2 data-translate="contact_info_title">معلومات التواصل</h2>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h4 data-translate="contact_whatsapp">واتساب</h4>
+                                <p>+201029448695</p>
+                                <a href="https://wa.me/201029448695" class="btn btn-primary btn-sm" target="_blank" data-translate="contact_whatsapp_btn">تواصل الآن</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4 data-translate="contact_email">البريد الإلكتروني</h4>
+                                <p>hamdyabokabir@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4 data-translate="contact_location">الموقع</h4>
+                                <p data-translate="contact_address">المنيا - ديرمواس - تل بني عمران</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h3 data-translate="follow_me">تابعني</h3>
+                        <div class="social-links-large">
+                            <a href="https://www.facebook.com/share/19vfsxY9N6/" class="social-link" aria-label="Facebook">
+                                <span>📘</span>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/hunter_abokabir?igsh=MW1qZHFhcWM5dHo4eA==" class="social-link" aria-label="Instagram">
+                                <span>📷</span>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container" data-aos="fade-left">
+                    <h2 data-translate="contact_form_title">أرسل رسالة</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-translate="form_name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="form_email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-translate="form_phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service" data-translate="form_service">نوع الخدمة المطلوبة</label>
+                            <select id="service" name="service" required>
+                                <option value="" data-translate="form_service_placeholder">اختر الخدمة</option>
+                                <option value="design" data-translate="service_design_title">التصميم الجرافيكي</option>
+                                <option value="development" data-translate="service_dev_title">البرمجة والتطوير</option>
+                                <option value="social" data-translate="service_social_title">إدارة وسائل التواصل</option>
+                                <option value="digital" data-translate="service_digital_title">الخدمات الرقمية</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-translate="form_message">تفاصيل المشروع</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-translate="form_submit">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HUNTER</h3>
+                    <p data-translate="footer_description">حمدي محمد أبو كبير - مصمم ومطور ومسوق رقمي</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/19vfsxY9N6/" aria-label="Facebook">📘</a>
+                        <a href="https://www.instagram.com/hunter_abokabir?igsh=MW1qZHFhcWM5dHo4eA==" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer_links_title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-translate="nav_about">من أنا</a></li>
+                        <li><a href="services.html" data-translate="nav_services">خدماتي</a></li>
+                        <li><a href="portfolio.html" data-translate="nav_portfolio">أعمالي</a></li>
+                        <li><a href="contact.html" data-translate="nav_contact">تواصل معي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer_contact_title">معلومات التواصل</h4>
+                    <div class="contact-info">
+                        <p>📍 <span data-translate="footer_location">المنيا - ديرمواس - تل بني عمران</span></p>
+                        <p>📧 hamdyabokabir@gmail.com</p>
+                        <p>📱 +201029448695</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HUNTER. <span data-translate="footer_rights">جميع الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

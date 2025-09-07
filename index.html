@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUNTER - حمدي محمد أبو كبير | Portfolio</title>
+    <meta name="description" content="Professional portfolio of HUNTER - Design, Programming, Social Media & Digital Services">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme" data-lang="ar">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">HUNTER</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active" data-translate="nav_home">الرئيسية</a>
+                <a href="about.html" class="nav-link" data-translate="nav_about">من أنا</a>
+                <a href="services.html" class="nav-link" data-translate="nav_services">خدماتي</a>
+                <a href="portfolio.html" class="nav-link" data-translate="nav_portfolio">أعمالي</a>
+                <a href="contact.html" class="nav-link" data-translate="nav_contact">تواصل معي</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <button class="lang-toggle" id="lang-toggle" data-translate="lang_toggle">EN</button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="stars-container" id="stars"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span data-translate="hero_greeting">مرحباً، أنا</span>
+                    <span class="brand-highlight">حمدي محمد</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typing-text" data-translate="hero_subtitle">مصمم ومطور ومسوق رقمي</span>
+                </h2>
+                <p class="hero-description" data-translate="hero_description">
+                    أحول أفكارك إلى تجارب رقمية مبهرة. تصميم، برمجة، تسويق رقمي وإدارة وسائل التواصل الاجتماعي.
+                </p>
+                <div class="hero-buttons">
+                    <a href="portfolio.html" class="btn btn-primary" data-translate="hero_btn_work">شاهد أعمالي</a>
+                    <a href="https://wa.me/201029448695" class="btn btn-secondary" target="_blank" data-translate="hero_btn_whatsapp">تواصل معي</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span data-translate="scroll_hint">مرر للأسفل</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview" id="services-preview">
+        <div class="container">
+            <h2 class="section-title" data-translate="services_title">خدماتي المميزة</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">🎨</div>
+                    <h3 data-translate="service_design_title">التصميم الجرافيكي</h3>
+                    <p data-translate="service_design_desc">تصميم هويات بصرية، لوجوهات، منشورات، وكل ما يخص التصميم الاحترافي</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">💻</div>
+                    <h3 data-translate="service_dev_title">البرمجة والتطوير</h3>
+                    <p data-translate="service_dev_desc">تطوير مواقع ويب وتطبيقات احترافية بأحدث التقنيات والمعايير</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">📱</div>
+                    <h3 data-translate="service_social_title">إدارة وسائل التواصل</h3>
+                    <p data-translate="service_social_desc">إدارة حسابات التواصل الاجتماعي، كتابة المحتوى، والتسويق الرقمي</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">🚀</div>
+                    <h3 data-translate="service_digital_title">الخدمات الرقمية</h3>
+                    <p data-translate="service_digital_desc">استشارات تقنية، تحسين محركات البحث، والحلول الرقمية المتكاملة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work -->
+    <section class="featured-work" id="featured-work">
+        <div class="container">
+            <h2 class="section-title" data-translate="featured_title">أعمال مميزة</h2>
+            <div class="work-grid">
+                <div class="work-item" data-aos="zoom-in">
+                    <div class="work-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=500" alt="E-commerce Website">
+                        <div class="work-overlay">
+                            <h3 data-translate="work1_title">متجر إلكتروني احترافي</h3>
+                            <p data-translate="work1_desc">تصميم وبرمجة متجر إلكتروني متكامل</p>
+                            <button class="work-btn" data-translate="work_view">شاهد التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="work-image">
+                        <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Brand Identity">
+                        <div class="work-overlay">
+                            <h3 data-translate="work2_title">هوية بصرية متكاملة</h3>
+                            <p data-translate="work2_desc">تصميم هوية بصرية لشركة تقنية</p>
+                            <button class="work-btn" data-translate="work_view">شاهد التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="work-image">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Mobile App">
+                        <div class="work-overlay">
+                            <h3 data-translate="work3_title">تطبيق موبايل</h3>
+                            <p data-translate="work3_desc">تطبيق جوال لإدارة المهام</p>
+                            <button class="work-btn" data-translate="work_view">شاهد التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="work-image">
+                        <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Social Media Campaign">
+                        <div class="work-overlay">
+                            <h3 data-translate="work4_title">حملة تسويقية</h3>
+                            <p data-translate="work4_desc">حملة تسويق رقمي ناجحة</p>
+                            <button class="work-btn" data-translate="work_view">شاهد التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="portfolio.html" class="btn btn-outline" data-translate="view_all_work">شاهد جميع الأعمال</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="count-up">
+                    <span class="stat-number" data-count="+235">+235</span>
+                    <span class="stat-label" data-translate="stat_projects">مشروع مكتمل</span>
+                </div>
+                <div class="stat-item" data-aos="count-up" data-aos-delay="100">
+                    <span class="stat-number" data-count="4">4</span>
+                    <span class="stat-label" data-translate="stat_experience">سنوات خبرة</span>
+                </div>
+                <div class="stat-item" data-aos="count-up" data-aos-delay="200">
+                    <span class="stat-number" data-count="+110">+110</span>
+                    <span class="stat-label" data-translate="stat_clients">عميل راضي</span>
+                </div>
+                <div class="stat-item" data-aos="count-up" data-aos-delay="300">
+                    <span class="stat-number" data-count="24">24</span>
+                    <span class="stat-label" data-translate="stat_support">دعم فني</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-translate="testimonials_title">آراء العملاء</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active" data-aos="fade-in">
+                    <div class="testimonial-content">
+                        <p data-translate="testimonial1_text">"عمل احترافي ممتاز، حمدي طور لنا موقع رائع وفاق توقعاتنا بكثير. أنصح بالتعامل معه بشدة."</p>
+                        <div class="testimonial-author">
+                            <strong data-translate="testimonial1_author">أحمد محمود</strong>
+                            <span data-translate="testimonial1_role">مدير شركة تقنية</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item" data-aos="fade-in">
+                    <div class="testimonial-content">
+                        <p data-translate="testimonial2_text">"تصميماته مبدعة وخدماته في التسويق الرقمي ساعدتنا نصل لجمهور أكبر. شكراً HUNTER!"</p>
+                        <div class="testimonial-author">
+                            <strong data-translate="testimonial2_author">فاطمة علي</strong>
+                            <span data-translate="testimonial2_role">صاحبة مشروع</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 data-translate="cta_title">جاهز نبدأ مشروعك؟</h2>
+                <p data-translate="cta_description">تواصل معي الآن ولنحول فكرتك إلى واقع رقمي مبهر</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/201029448695" class="btn btn-primary" target="_blank" data-translate="cta_whatsapp">تواصل واتساب</a>
+                    <a href="contact.html" class="btn btn-outline" data-translate="cta_form">املأ النموذج</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HUNTER</h3>
+                    <p data-translate="footer_description">حمدي محمد أبو كبير - مصمم ومطور ومسوق رقمي</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/19vfsxY9N6/" aria-label="Facebook">📘</a>
+                        <a href="https://www.instagram.com/hunter_abokabir?igsh=MW1qZHFhcWM5dHo4eA==" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer_links_title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-translate="nav_about">من أنا</a></li>
+                        <li><a href="services.html" data-translate="nav_services">خدماتي</a></li>
+                        <li><a href="portfolio.html" data-translate="nav_portfolio">أعمالي</a></li>
+                        <li><a href="contact.html" data-translate="nav_contact">تواصل معي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer_contact_title">معلومات التواصل</h4>
+                    <div class="contact-info">
+                        <p>📍 <span data-translate="footer_location">المنيا - ديرمواس - تل بني عمران</span></p>
+                        <p>📧 hunter@example.com</p>
+                        <p>📱 +201029448695</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HUNTER. <span data-translate="footer_rights">جميع الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
