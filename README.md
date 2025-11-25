@@ -177,7 +177,7 @@ Adjust animation timings and effects in `css/style.css`:
 
 For customization help or questions:
 - **WhatsApp**: [+201029448695](https://wa.me/201029448695)
-- **Email**: hunter@example.com
+- **Email**: hamdyabokabir@gmail.com
 
 ## 📄 License
 
